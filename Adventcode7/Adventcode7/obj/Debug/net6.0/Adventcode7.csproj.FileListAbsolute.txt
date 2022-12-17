@@ -1,0 +1,15 @@
+C:\Users\Sam\Documents\Adventofcode\Adventcode7\Adventcode7\bin\Debug\net6.0\Adventcode7.exe
+C:\Users\Sam\Documents\Adventofcode\Adventcode7\Adventcode7\bin\Debug\net6.0\Adventcode7.deps.json
+C:\Users\Sam\Documents\Adventofcode\Adventcode7\Adventcode7\bin\Debug\net6.0\Adventcode7.runtimeconfig.json
+C:\Users\Sam\Documents\Adventofcode\Adventcode7\Adventcode7\bin\Debug\net6.0\Adventcode7.dll
+C:\Users\Sam\Documents\Adventofcode\Adventcode7\Adventcode7\bin\Debug\net6.0\Adventcode7.pdb
+C:\Users\Sam\Documents\Adventofcode\Adventcode7\Adventcode7\obj\Debug\net6.0\Adventcode7.csproj.AssemblyReference.cache
+C:\Users\Sam\Documents\Adventofcode\Adventcode7\Adventcode7\obj\Debug\net6.0\Adventcode7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sam\Documents\Adventofcode\Adventcode7\Adventcode7\obj\Debug\net6.0\Adventcode7.AssemblyInfoInputs.cache
+C:\Users\Sam\Documents\Adventofcode\Adventcode7\Adventcode7\obj\Debug\net6.0\Adventcode7.AssemblyInfo.cs
+C:\Users\Sam\Documents\Adventofcode\Adventcode7\Adventcode7\obj\Debug\net6.0\Adventcode7.csproj.CoreCompileInputs.cache
+C:\Users\Sam\Documents\Adventofcode\Adventcode7\Adventcode7\obj\Debug\net6.0\Adventcode7.dll
+C:\Users\Sam\Documents\Adventofcode\Adventcode7\Adventcode7\obj\Debug\net6.0\refint\Adventcode7.dll
+C:\Users\Sam\Documents\Adventofcode\Adventcode7\Adventcode7\obj\Debug\net6.0\Adventcode7.pdb
+C:\Users\Sam\Documents\Adventofcode\Adventcode7\Adventcode7\obj\Debug\net6.0\Adventcode7.genruntimeconfig.cache
+C:\Users\Sam\Documents\Adventofcode\Adventcode7\Adventcode7\obj\Debug\net6.0\ref\Adventcode7.dll
