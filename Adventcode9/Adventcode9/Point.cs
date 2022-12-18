@@ -11,6 +11,7 @@ namespace Adventcode9
         public bool head;
         public bool tail;
         public bool visiteed;
+        public List<int> ropes;
         public int x;
         public int y;
 
@@ -19,6 +20,7 @@ namespace Adventcode9
             visiteed = false;
             x = X;
             y = Y;
+            ropes = new List<int>();
         }
     }
 }
