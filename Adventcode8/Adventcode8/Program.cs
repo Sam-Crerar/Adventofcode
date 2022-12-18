@@ -1,4 +1,4 @@
-﻿string textFile = @"test.txt";
+﻿string textFile = @"file.txt";
 string[] lines = File.ReadAllLines(textFile);
 List<List<int>> area = new List<List<int>>();
 start(lines, 2);
@@ -128,111 +128,51 @@ void start(string[] puzzleInput, int part)
             for (int j = 0; j < puzzleInput[i].Length; j++)
             {
                 int currenthight = area[i][j];
-                int leftscenery = 1;
-                int rightscenery = 1;
-                int upscenery = 1;
-                int downscenery = 1;
+                int leftscenery = 0;
+                int rightscenery = 0;
+                int upscenery = 0;
+                int downscenery = 0;
                 //look left
-                bool visibleleft = true;
-                if (j == 0)
+                for (int k = j - 1; k >= 0; k--)
                 {
-                    visibleleft = true;
-                }
-                else
-                {
-                    for (int k = j - 1; k >= 0; k--)
+                    leftscenery++;
+                    if (area[i][k] >= currenthight)
                     {
-                        if (area[i][k] >= currenthight)
-                        {
-                            visibleleft = false;
-                            break;
-                        }
-                        if (k != 0)
-                        {
-                            leftscenery++;
-                        }
+                        break;
                     }
                 }
                 //look right
-                bool visibleright = true;
-                if (j == area[i].Count)
+                for (int k = j + 1; k < area[i].Count; k++)
                 {
-                    visibleright = true;
-                }
-                else
-                {
-                    for (int k = j + 1; k < area[i].Count; k++)
+                    rightscenery++;
+                    if (area[i][k] >= currenthight)
                     {
-                        if (area[i][k] >= currenthight)
-                        {
-                            visibleright = false;
-                            break;
-                        }
-                        if(k != area[i].Count-1)
-                        {
-                            rightscenery++;
-                        }
+                        break;
                     }
                 }
+                
                 //look up
-                bool visibleup = true;
-                if (i == 0)
+                for (int k = i - 1; k >= 0; k--)
                 {
-                    visibleup = true;
-                }
-                else
-                {
-                    for (int k = i - 1; k >= 0; k--)
+                    upscenery++;
+                    if (area[k][j] >= currenthight)
                     {
-                        if (area[k][j] >= currenthight)
-                        {
-                            visibleup = false;
-                            break;
-                        }
-                        if (k != 0)
-                        {
-                            upscenery++; 
-                        }
-                    }
+                        break;
+                    }                    
                 }
                 //look down
-                bool visibledown = true;
-                if (i == area.Count)
+                for (int k = i + 1; k < area.Count; k++)
                 {
-                    visibledown = true;
-                }
-                else
-                {
-                    for (int k = i + 1; k < area.Count; k++)
+                    downscenery++;
+                    if (area[k][j] >= currenthight)
                     {
-                        if (area[k][j] >= currenthight)
-                        {
-                            visibledown = false;
-                            break;
-                        }
-                        if (k != area.Count - 1)
-                        {
-                            downscenery++;
-                        }
-                    }
+                        break;
+                    }                    
                 }
-                if (!visibleleft && !visibleright && !visibleup && !visibledown)
-                {
-                    //array[i, j] = 0;
-                    scenery.Add(leftscenery * rightscenery * upscenery * downscenery);
-                }
-                else
-                {
-                    total++;
-                    scenery.Add(leftscenery * rightscenery * upscenery * downscenery);
-                    //array[i, j] = 1;
-                }
-
+                scenery.Add(leftscenery * rightscenery * upscenery * downscenery);
             }
         }
         int highestValue = scenery[0];
-
-        // Iterate through the list and check if each element is greater than the current highest value
         foreach (int number in scenery)
         {
             if (number > highestValue)
