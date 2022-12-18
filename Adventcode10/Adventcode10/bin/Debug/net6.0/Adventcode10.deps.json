@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Adventcode10/1.0.0": {
+        "runtime": {
+          "Adventcode10.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Adventcode10/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
