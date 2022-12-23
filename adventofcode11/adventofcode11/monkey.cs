@@ -27,12 +27,46 @@ namespace adventofcode11
 
         internal void calculateworry()
         {
-            throw new NotImplementedException();
+            if (items.count == 0)
+            {
+                return null;
+            }
+            int value = 0;
+            if(Operationvalue == "old")
+            {
+                value = items[0];
+            }
+            else
+            {
+                value = int.parse(operationvalue);
+            }
+            switch (operationtype) {
+                case ('+'):
+                    int temp = items[0];
+                    items.RemoveAt(0);
+                    return temp + value;
+                case ('-'):
+                    int temp = items[0];
+                    items.RemoveAt(0);
+                    return temp - value;
+                case ('*'):
+                    int temp = items[0];
+                    items.RemoveAt(0);
+                    return temp * value;
+                case ('/'):
+                    int temp = items[0];
+                    items.RemoveAt(0);
+                    return temp / value;
+            }
         }
 
-        internal int whichmonkeytogive()
+        internal int whichmonkeytogive(int worry)
         {
-            throw new NotImplementedException();
+            if(worry % testvalue == 0)
+            {
+                return trueto;
+            }
+            return falseto;
         }
     }
 }
