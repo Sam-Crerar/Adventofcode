@@ -1,0 +1,15 @@
+C:\Users\Sam\Documents\Adventofcode\adventofcode11\adventofcode11\bin\Debug\net6.0\adventofcode11.exe
+C:\Users\Sam\Documents\Adventofcode\adventofcode11\adventofcode11\bin\Debug\net6.0\adventofcode11.deps.json
+C:\Users\Sam\Documents\Adventofcode\adventofcode11\adventofcode11\bin\Debug\net6.0\adventofcode11.runtimeconfig.json
+C:\Users\Sam\Documents\Adventofcode\adventofcode11\adventofcode11\bin\Debug\net6.0\adventofcode11.dll
+C:\Users\Sam\Documents\Adventofcode\adventofcode11\adventofcode11\bin\Debug\net6.0\adventofcode11.pdb
+C:\Users\Sam\Documents\Adventofcode\adventofcode11\adventofcode11\obj\Debug\net6.0\adventofcode11.csproj.AssemblyReference.cache
+C:\Users\Sam\Documents\Adventofcode\adventofcode11\adventofcode11\obj\Debug\net6.0\adventofcode11.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Sam\Documents\Adventofcode\adventofcode11\adventofcode11\obj\Debug\net6.0\adventofcode11.AssemblyInfoInputs.cache
+C:\Users\Sam\Documents\Adventofcode\adventofcode11\adventofcode11\obj\Debug\net6.0\adventofcode11.AssemblyInfo.cs
+C:\Users\Sam\Documents\Adventofcode\adventofcode11\adventofcode11\obj\Debug\net6.0\adventofcode11.csproj.CoreCompileInputs.cache
+C:\Users\Sam\Documents\Adventofcode\adventofcode11\adventofcode11\obj\Debug\net6.0\adventofcode11.dll
+C:\Users\Sam\Documents\Adventofcode\adventofcode11\adventofcode11\obj\Debug\net6.0\refint\adventofcode11.dll
+C:\Users\Sam\Documents\Adventofcode\adventofcode11\adventofcode11\obj\Debug\net6.0\adventofcode11.pdb
+C:\Users\Sam\Documents\Adventofcode\adventofcode11\adventofcode11\obj\Debug\net6.0\adventofcode11.genruntimeconfig.cache
+C:\Users\Sam\Documents\Adventofcode\adventofcode11\adventofcode11\obj\Debug\net6.0\ref\adventofcode11.dll
