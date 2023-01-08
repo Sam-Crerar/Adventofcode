@@ -1,21 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sroch\\Documents\\GitHub\\Adventofcode\\adventofcode11\\adventofcode11\\adventofcode11.csproj": {}
+    "C:\\Users\\Sam\\Documents\\Adventofcode\\adventofcode11\\adventofcode11\\adventofcode11.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sroch\\Documents\\GitHub\\Adventofcode\\adventofcode11\\adventofcode11\\adventofcode11.csproj": {
+    "C:\\Users\\Sam\\Documents\\Adventofcode\\adventofcode11\\adventofcode11\\adventofcode11.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sroch\\Documents\\GitHub\\Adventofcode\\adventofcode11\\adventofcode11\\adventofcode11.csproj",
+        "projectUniqueName": "C:\\Users\\Sam\\Documents\\Adventofcode\\adventofcode11\\adventofcode11\\adventofcode11.csproj",
         "projectName": "adventofcode11",
-        "projectPath": "C:\\Users\\Sroch\\Documents\\GitHub\\Adventofcode\\adventofcode11\\adventofcode11\\adventofcode11.csproj",
-        "packagesPath": "C:\\Users\\Sroch\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sroch\\Documents\\GitHub\\Adventofcode\\adventofcode11\\adventofcode11\\obj\\",
+        "projectPath": "C:\\Users\\Sam\\Documents\\Adventofcode\\adventofcode11\\adventofcode11\\adventofcode11.csproj",
+        "packagesPath": "C:\\Users\\Sam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sam\\Documents\\Adventofcode\\adventofcode11\\adventofcode11\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Sroch\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Sam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -49,7 +55,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,14 +9,15 @@ namespace adventofcode11
 {
     internal class monkey
     {
-        public List<int> items = new List<int>();
+        public List<BigInteger> items = new List<BigInteger>();
         public char operationtype;
         public string operationvalue;
-        public int testvalue;
-        public int trueto;
-        public int falseto;
+        public long testvalue;
+        public long trueto;
+        public long falseto;
+        public long inspection;
 
-        public monkey(List<int> Items, char Operationtype, string Operationvalue, int Testvalue, int Trueto, int Falseto)
+        public monkey(List<BigInteger> Items, char Operationtype, string Operationvalue, long Testvalue, long Trueto, long Falseto)
         {
             items = Items;
             operationtype = Operationtype;
@@ -25,48 +27,55 @@ namespace adventofcode11
             falseto = Falseto;
         }
 
-        internal void calculateworry()
+        public BigInteger calculateworry()
         {
-            if (items.count == 0)
-            {
-                return null;
-            }
-            int value = 0;
-            if(Operationvalue == "old")
+            BigInteger value = 0;
+            inspection++;
+            if (operationvalue == "old")
             {
                 value = items[0];
             }
             else
             {
-                value = int.parse(operationvalue);
+                value = BigInteger.Parse(operationvalue);
             }
             switch (operationtype) {
                 case ('+'):
-                    int temp = items[0];
+                    BigInteger temp = items[0];
                     items.RemoveAt(0);
-                    return temp + value;
+                    temp = temp + value;
+                    temp %= 96577;
+                    return temp;
                 case ('-'):
-                    int temp = items[0];
+                    temp = items[0];
                     items.RemoveAt(0);
-                    return temp - value;
+                    temp = temp - value;
+                    temp %= 96577;
+                    return temp;
                 case ('*'):
-                    int temp = items[0];
+                    temp = items[0];
                     items.RemoveAt(0);
-                    return temp * value;
+                    temp = temp * value;
+                    temp %= 96577;
+                    return temp;
                 case ('/'):
-                    int temp = items[0];
+                    temp = items[0];
                     items.RemoveAt(0);
-                    return temp / value;
+                    temp = temp / value;
+                    temp %= 96577;
+                    return temp;
             }
+
+            return -1;
         }
 
-        internal int whichmonkeytogive(int worry)
+        internal int whichmonkeytogive(BigInteger worry)
         {
             if(worry % testvalue == 0)
             {
-                return trueto;
+                return int.Parse(trueto.ToString());
             }
-            return falseto;
+            return int.Parse(falseto.ToString());
         }
     }
 }
